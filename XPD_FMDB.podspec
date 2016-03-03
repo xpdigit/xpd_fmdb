@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   # use the built-in library version of sqlite3 with custom FTS tokenizer source files
   s.subspec 'FTS' do |ss|
     ss.source_files = 'src/extra/fts3/*.{h,m}'
-    ss.dependency 'FMDB/standard'
+    ss.dependency 'XPD_FMDB/standard'
   end
 
   # build the latest stable version of sqlite3
