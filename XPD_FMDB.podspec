@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'XPD_FMDB'
+  s.name = 'xpd_fmdb'
   s.version = '2.6.3'
   s.summary = 'A Cocoa / Objective-C wrapper around SQLite.'
   s.homepage = 'https://github.com/ccgus/fmdb'
