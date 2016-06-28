@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
     ss.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC' }
   end
 
-  s.public_header_files = 'src/fmdb/*.h'
+  s.public_header_files = 'src/fmdb/FM*.h'
   
 end
