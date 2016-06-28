@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.platform = :ios, '5.0'
   s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
+  s.public_header_files = 'src/fmdb/FM*.h'
+
   # use a builtin version of sqlite3
   s.subspec 'standard' do |ss|
     ss.library = 'sqlite3'
@@ -32,7 +34,5 @@ Pod::Spec.new do |s|
     ss.exclude_files = 'src/fmdb.m'
     ss.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC' }
   end
-
-  s.public_header_files = 'src/fmdb/FM*.h'
   
 end
