@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   # use a builtin version of sqlite3
   s.subspec 'standard' do |ss|
-    ss.library = 'sqlite3'
+    ss.library = 'sqlite3', '3.13.0'
     ss.source_files = 'src/fmdb/FM*.{h,m}'
     ss.exclude_files = 'src/fmdb.m'
   end
