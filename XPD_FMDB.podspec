@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'src/fmdb/FM*.h'
 
   # use a builtin version of sqlite3
-  s.library = 'sqlite3', '3.13.0'
+  s.library = 'sqlite3'
   s.source_files = 'src/fmdb/FM*.{h,m}'
   s.exclude_files = 'src/fmdb.m'
   
